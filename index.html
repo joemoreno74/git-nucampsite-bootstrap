@@ -52,9 +52,55 @@
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
-            </div>  
+
+                <span class="navbar-text ml-auto">
+                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in"></i> Login
+                    </a>
+                </span>
+
+
         </div>    
     </nav>
+
+                <div id="loginModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Login</h3>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-12">
+                                                <label class="sr-only" for="loginEmail">Email address</label>
+                                                <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                            </div>
+                                            <div class="form-group col-12">
+                                                <label class="sr-only" for="loginPassword">Password</label>
+                                                <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label"> Remember me</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
 
         <div class="container">
             <div class="row row-content align-items-center">
@@ -72,7 +118,7 @@
                     </div>       
             </div>
 
-            <div class="container">
+
                 <div class="row row-content align-items-center">
                         <div class="col-sm-4 order-sm-first col-md-3">
                              <h2 class="text-sm-right">Featured Campsites</h2>
@@ -86,27 +132,24 @@
                                 <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake" />  
                             </div>
                         </div>   
-            </div>
+                </div>
 
-            <div class="container">
-              <div class="row row-content align-items-center">
+            <div class="row row-content align-items-center">
                 <div class="col-sm-4 order-sm-last col-md-3">
                     <h2 class="text-sm-right">Our Community Partners</h2>
                 </div>
-                <div class="col">
-                    <div class="media">
-                        <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />                   
-                        <div class="media-body align-self-center">
-                            <h3>Bootstrap Outfitters</h3>
-                            <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>   
+                    <div class="col">
+                        <div class="media">
+                            <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />                   
+                            <div class="media-body align-self-center">
+                                <h3>Bootstrap Outfitters</h3>
+                                <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>   
+                            </div>
                         </div>
-                    </div>
-                </div>  
-              </div> 
+                    </div>  
             </div>     
 
-            <div class="container">
-              <div class="row row-content">
+            <div class="row row-content">
                 <div class="col-sm-6 mx-auto">
                     <div class="card">
                         <div class="card-header bg-info text-white">
@@ -146,8 +189,7 @@
                         </div>      
                   </div>
                 </div>    
-            </div> 
-        </div>  
+            </div>  
 
     <footer class="site-footer">
         <div class="container">
